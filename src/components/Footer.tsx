@@ -33,9 +33,9 @@ const Footer = () => (
           <a href="tel:+79494332002" className="flex items-center gap-2 opacity-80 hover:opacity-100">
             <Phone className="w-4 h-4" /> +7 (949) 433-20-02
           </a>
-          <a href="mailto:servicecooler@mail.ru" className="flex items-center gap-2 opacity-80 hover:opacity-100">
+          <button onClick={() => { navigator.clipboard.writeText("servicecooler@mail.ru"); toast.success("Email скопирован!"); }} className="flex items-center gap-2 opacity-80 hover:opacity-100 cursor-pointer">
             <Mail className="w-4 h-4" /> servicecooler@mail.ru
-          </a>
+          </button>
           <p className="flex items-center gap-2 opacity-80">
             <MapPin className="w-4 h-4" /> Донецк, улица Боклевского, 2
           </p>
