@@ -1,6 +1,12 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
+import { toast } from "sonner";
+
+const copyEmail = () => {
+  navigator.clipboard.writeText("servicecooler@mail.ru");
+  toast.success("Email скопирован!");
+};
 
 const Contacts = () => (
   <main className="container py-12">
@@ -20,7 +26,7 @@ const Contacts = () => (
           <Mail className="w-5 h-5 text-primary mt-1 shrink-0" />
           <div>
             <h3 className="font-bold">Email</h3>
-            <a href="mailto:servicecooler@mail.ru" className="text-primary">servicecooler@mail.ru</a>
+            <button onClick={copyEmail} className="text-primary cursor-pointer hover:underline">servicecooler@mail.ru</button>
           </div>
         </div>
 

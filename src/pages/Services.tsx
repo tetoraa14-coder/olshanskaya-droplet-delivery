@@ -1,5 +1,6 @@
 import { Truck, Clock, Mail, CalendarDays } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const Services = () => (
   <main className="container py-12 max-w-3xl">
@@ -67,10 +68,8 @@ const Services = () => (
       <section>
         <h2 className="text-2xl font-bold mb-3">Способы заказа</h2>
         <div className="flex flex-wrap gap-4">
-          <Button size="lg" variant="outline" asChild>
-            <a href="mailto:servicecooler@mail.ru">
-              <Mail className="w-5 h-5 mr-2" /> Написать на email
-            </a>
+          <Button size="lg" variant="outline" onClick={() => { navigator.clipboard.writeText("servicecooler@mail.ru"); toast.success("Email скопирован!"); }}>
+            <Mail className="w-5 h-5 mr-2" /> Написать на email
           </Button>
         </div>
       </section>
