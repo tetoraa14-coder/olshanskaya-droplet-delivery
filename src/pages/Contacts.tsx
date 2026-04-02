@@ -1,6 +1,12 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
+import { toast } from "sonner";
+
+const copyEmail = () => {
+  navigator.clipboard.writeText("servicecooler@mail.ru");
+  toast.success("Email скопирован!");
+};
 
 const Contacts = () => (
   <main className="container py-12">
