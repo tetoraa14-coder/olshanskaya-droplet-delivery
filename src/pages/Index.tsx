@@ -4,7 +4,7 @@ import { Phone, Droplets, Truck, CircleDollarSign, Star } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import ContactForm from "@/components/ContactForm";
 import { products } from "@/data/products";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBottle from "@/assets/hero-bottles.jpeg";
 
 const advantages = [
   { icon: Truck, title: "Быстрая доставка", desc: "Доставим воду в удобное для вас время по Донецку и области" },
