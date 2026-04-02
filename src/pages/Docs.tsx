@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 
 const documents = [
   { name: "Сертификат соответствия на питьевую воду", file: "#" },
-  { name: "Санитарно-эпидемиологическое заключение", file: "#" },
-  { name: "Лицензия на добычу подземных вод", file: "#" },
 ];
 
 const Docs = () => (

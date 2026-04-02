@@ -8,7 +8,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const advantages = [
   { icon: Truck, title: "Быстрая доставка", desc: "Доставим воду в удобное для вас время по Донецку и области" },
-  { icon: Droplets, title: "Чистая вода", desc: "Артезианская вода из проверенных источников, прошедшая контроль качества" },
+  { icon: Droplets, title: "Чистая вода", desc: "Питьевая вода из проверенных источников, прошедшая контроль качества" },
   { icon: CircleDollarSign, title: "Доступные цены", desc: "Выгодные цены и гибкая система скидок для постоянных клиентов" },
 ];
 
@@ -36,15 +36,15 @@ const Index = () => (
           Чистая вода —<br />здоровая жизнь
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
-          Доставка артезианской питьевой воды 19 л по Донецку и области. Быстро, надёжно, доступно.
+          Доставка питьевой воды 18,9 л по Донецку и области. Быстро, надёжно, доступно.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" variant="secondary" asChild>
-            <a href="tel:+79001234567">
+            <a href="tel:+79494332002">
               <Phone className="w-5 h-5 mr-2" /> Позвонить
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+          <Button size="lg" variant="outline" className="border-primary-foreground/40 text-foreground hover:bg-primary-foreground/10" asChild>
             <Link to="/contacts">Оставить заявку</Link>
           </Button>
         </div>

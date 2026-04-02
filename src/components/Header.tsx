@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navItems = [
@@ -40,13 +39,10 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:+79001234567" className="flex items-center gap-2 font-bold text-primary">
+          <a href="tel:+79494332002" className="flex items-center gap-2 font-bold text-primary">
             <Phone className="w-4 h-4" />
-            +7 (900) 123-45-67
+            +7 (949) 433-20-02
           </a>
-          <Button asChild>
-            <a href="tel:+79001234567">Позвонить</a>
-          </Button>
         </div>
 
         <button
@@ -72,13 +68,10 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          <a href="tel:+79001234567" className="block py-2 font-bold text-primary">
+          <a href="tel:+79494332002" className="block py-2 font-bold text-primary">
             <Phone className="w-4 h-4 inline mr-2" />
-            +7 (900) 123-45-67
+            +7 (949) 433-20-02
           </a>
-          <Button className="w-full" asChild>
-            <a href="tel:+79001234567">Позвонить</a>
-          </Button>
         </div>
       )}
     </header>
