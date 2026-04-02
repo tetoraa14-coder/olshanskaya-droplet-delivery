@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
 
 interface ProductCardProps {
   name: string;

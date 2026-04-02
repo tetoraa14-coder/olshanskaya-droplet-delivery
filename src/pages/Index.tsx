@@ -82,6 +82,15 @@ const Index = () => (
       </div>
     </section>
 
+    {/* CTA + Contact Form */}
+    <section className="hero-gradient text-primary-foreground py-16">
+      <div className="container text-center space-y-6">
+        <h2 className="text-3xl font-extrabold">Закажите воду прямо сейчас</h2>
+        <p className="opacity-90 max-w-lg mx-auto">Оставьте заявку, и мы свяжемся с вами в кратчайшие сроки</p>
+        <ContactForm />
+      </div>
+    </section>
+
     {/* Reviews */}
     <section className="container py-16">
       <h2 className="text-3xl font-extrabold text-center mb-10">Отзывы клиентов</h2>
@@ -97,15 +106,6 @@ const Index = () => (
             <p className="font-bold text-sm">{r.name}</p>
           </div>
         ))}
-      </div>
-    </section>
-
-    {/* CTA + Contact Form */}
-    <section className="hero-gradient text-primary-foreground py-16">
-      <div className="container text-center space-y-6">
-        <h2 className="text-3xl font-extrabold">Закажите воду прямо сейчас</h2>
-        <p className="opacity-90 max-w-lg mx-auto">Оставьте заявку, и мы свяжемся с вами в кратчайшие сроки</p>
-        <ContactForm />
       </div>
     </section>
   </main>
