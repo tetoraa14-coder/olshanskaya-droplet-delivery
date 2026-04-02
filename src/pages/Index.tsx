@@ -21,32 +21,30 @@ const reviews = [
 const Index = () => (
   <main>
     {/* Hero */}
-    <section
-      className="relative overflow-hidden hero-gradient text-primary-foreground"
-    >
-      <img
-        src={heroBg}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
-        width={1920}
-        height={1080}
-      />
-      <div className="relative container py-20 md:py-32 text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-          Чистая вода —<br />здоровая жизнь
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
-          Доставка питьевой воды 18,9 л по Донецку и области. Быстро, надёжно, доступно.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" variant="secondary" asChild>
-            <a href="tel:+79494332002">
-              <Phone className="w-5 h-5 mr-2" /> Позвонить
-            </a>
-          </Button>
-          <Button size="lg" variant="outline" className="border-primary-foreground/40 text-foreground hover:bg-primary-foreground/10" asChild>
-            <Link to="/contacts">Оставить заявку</Link>
-          </Button>
+    <section className="relative overflow-hidden hero-gradient text-primary-foreground">
+      <div className="relative container py-20 md:py-32 flex flex-col md:flex-row items-center gap-10">
+        <div className="flex-1 text-center md:text-left space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            Чистая вода —<br />здоровая жизнь
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl opacity-90">
+            Доставка питьевой воды 18,9 л по Донецку и области. Быстро, надёжно, доступно.
+          </p>
+          <div className="flex flex-wrap justify-center md:justify-start gap-4">
+            <Button size="lg" variant="secondary" asChild>
+              <a href="tel:+79494332002">
+                <Phone className="w-5 h-5 mr-2" /> Позвонить
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary-foreground/40 text-foreground hover:bg-primary-foreground/10" asChild>
+              <Link to="/contacts">Оставить заявку</Link>
+            </Button>
+          </div>
+        </div>
+        <div className="flex-1 flex justify-center gap-[-20px]">
+          <img src={heroBottle} alt="Вода Ольшанская 18,9л" className="h-56 md:h-72 lg:h-80 object-contain drop-shadow-xl" />
+          <img src={heroBottle} alt="Вода Ольшанская 18,9л" className="h-56 md:h-72 lg:h-80 object-contain drop-shadow-xl -ml-8" />
+          <img src={heroBottle} alt="Вода Ольшанская 18,9л" className="h-56 md:h-72 lg:h-80 object-contain drop-shadow-xl -ml-8" />
         </div>
       </div>
     </section>
