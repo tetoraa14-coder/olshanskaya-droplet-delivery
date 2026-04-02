@@ -1,15 +1,17 @@
 import waterBottle from "@/assets/water-bottle.png";
 import emptyBottle from "@/assets/empty-bottle.png";
 import waterPump from "@/assets/water-pump.png";
+import bottlePumpCombo from "@/assets/bottle-pump-combo.png";
 
 export interface Product {
   id: string;
   name: string;
   description: string;
   price: string;
+  oldPrice?: string;
   volume?: string;
   image: string;
-  category: "water" | "bottles" | "accessories";
+  category: "water" | "bottles" | "accessories" | "combo";
 }
 
 export const products: Product[] = [
@@ -39,6 +41,16 @@ export const products: Product[] = [
     image: waterPump,
     category: "accessories",
   },
+  {
+    id: "bottle-pump-combo",
+    name: "Пустая бутылка 18,9л + помпа",
+    description: "Выгодный комплект: новая бутылка 18,9 литров и ручная помпа для воды.",
+    price: "1100 руб.",
+    oldPrice: "1300 руб.",
+    volume: "18,9 литров",
+    image: bottlePumpCombo,
+    category: "combo",
+  },
 ];
 
 export const categories = [
@@ -46,4 +58,5 @@ export const categories = [
   { id: "water", label: "Питьевая вода" },
   { id: "bottles", label: "Бутыли" },
   { id: "accessories", label: "Сопутствующие товары" },
+  { id: "combo", label: "Комплекты" },
 ];
