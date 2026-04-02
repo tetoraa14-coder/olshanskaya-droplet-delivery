@@ -1,4 +1,4 @@
-import { Truck, Clock, Mail, CalendarDays } from "lucide-react";
+import { Truck, Clock, Mail, CalendarDays, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
