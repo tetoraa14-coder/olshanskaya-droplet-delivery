@@ -68,6 +68,11 @@ const Services = () => (
       <section>
         <h2 className="text-2xl font-bold mb-3">Способы заказа</h2>
         <div className="flex flex-wrap gap-4">
+          <Button size="lg" variant="outline" asChild>
+            <a href="tel:+79494332002">
+              <Phone className="w-5 h-5 mr-2" /> Позвонить
+            </a>
+          </Button>
           <Button size="lg" variant="outline" onClick={() => { navigator.clipboard.writeText("servicecooler@mail.ru"); toast.success("Email скопирован!"); }}>
             <Mail className="w-5 h-5 mr-2" /> Написать на email
           </Button>
