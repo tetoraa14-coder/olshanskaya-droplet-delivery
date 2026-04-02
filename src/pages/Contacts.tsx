@@ -12,7 +12,7 @@ const Contacts = () => (
           <Phone className="w-5 h-5 text-primary mt-1 shrink-0" />
           <div>
             <h3 className="font-bold">Телефон</h3>
-            <a href="tel:+79001234567" className="text-primary font-semibold text-lg">+7 (900) 123-45-67</a>
+            <a href="tel:+79494332002" className="text-primary font-semibold text-lg">+7 (949) 433-20-02</a>
           </div>
         </div>
 
@@ -20,7 +20,7 @@ const Contacts = () => (
           <Mail className="w-5 h-5 text-primary mt-1 shrink-0" />
           <div>
             <h3 className="font-bold">Email</h3>
-            <a href="mailto:info@olshanskaya.ru" className="text-primary">info@olshanskaya.ru</a>
+            <a href="mailto:servicecooler@mail.ru" className="text-primary">servicecooler@mail.ru</a>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ const Contacts = () => (
           <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
           <div>
             <h3 className="font-bold">Адрес</h3>
-            <p className="text-muted-foreground">г. Донецк</p>
+            <p className="text-muted-foreground">Донецк, улица Боклевского, 2</p>
           </div>
         </div>
 
@@ -41,11 +41,6 @@ const Contacts = () => (
         </div>
 
         <div className="flex gap-3 pt-4">
-          <Button asChild>
-            <a href="tel:+79001234567">
-              <Phone className="w-4 h-4 mr-2" /> Позвонить
-            </a>
-          </Button>
           <Button variant="outline" asChild>
             <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-2" /> Telegram

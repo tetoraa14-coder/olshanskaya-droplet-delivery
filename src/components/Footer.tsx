@@ -11,7 +11,7 @@ const Footer = () => (
           <span className="text-lg font-bold">Ольшанская</span>
         </div>
         <p className="text-sm opacity-80">
-          Доставка чистой артезианской воды по Донецку и области. Работаем для вашего здоровья!
+          Доставка чистой питьевой воды по Донецку и области. Работаем для вашего здоровья!
         </p>
       </div>
 
@@ -29,14 +29,14 @@ const Footer = () => (
       <div>
         <h3 className="font-bold mb-4">Контакты</h3>
         <div className="space-y-3 text-sm">
-          <a href="tel:+79001234567" className="flex items-center gap-2 opacity-80 hover:opacity-100">
-            <Phone className="w-4 h-4" /> +7 (900) 123-45-67
+          <a href="tel:+79494332002" className="flex items-center gap-2 opacity-80 hover:opacity-100">
+            <Phone className="w-4 h-4" /> +7 (949) 433-20-02
           </a>
-          <a href="mailto:info@olshanskaya.ru" className="flex items-center gap-2 opacity-80 hover:opacity-100">
-            <Mail className="w-4 h-4" /> info@olshanskaya.ru
+          <a href="mailto:servicecooler@mail.ru" className="flex items-center gap-2 opacity-80 hover:opacity-100">
+            <Mail className="w-4 h-4" /> servicecooler@mail.ru
           </a>
           <p className="flex items-center gap-2 opacity-80">
-            <MapPin className="w-4 h-4" /> г. Донецк
+            <MapPin className="w-4 h-4" /> Донецк, улица Боклевского, 2
           </p>
         </div>
         <div className="flex gap-3 mt-4">
