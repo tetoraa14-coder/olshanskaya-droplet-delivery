@@ -2,7 +2,7 @@ import { FileText, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const documents = [
-  { name: "Сертификат соответствия на питьевую воду", file: "#" },
+  { name: "Сертификат соответствия на питьевую воду", file: "/docs/certificate.jpg" },
 ];
 
 const Docs = () => (
