@@ -20,7 +20,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Ольшанская" width={56} height={56} />
+          <img src={logo} alt="Ольшанская" width={110} height={110} />
           <span className="text-xl font-bold text-gradient">Ольшанская</span>
         </Link>
 
