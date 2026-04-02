@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
 
 interface ProductCardProps {
   name: string;
@@ -18,18 +16,13 @@ const ProductCard = ({ name, description, price, oldPrice, volume, image }: Prod
     <h3 className="font-bold text-lg mb-1">{name}</h3>
     {volume && <span className="text-sm text-muted-foreground mb-2">{volume}</span>}
     <p className="text-sm text-muted-foreground mb-4 flex-1">{description}</p>
-    <div className="flex items-center justify-between mt-auto">
+    <div className="mt-auto">
       <div className="flex flex-col">
         {oldPrice && (
           <span className="text-sm text-muted-foreground line-through">{oldPrice}</span>
         )}
         <span className="text-xl font-extrabold text-primary">{price}</span>
       </div>
-      <Button size="sm" asChild>
-        <a href="tel:+79494332002">
-          <Phone className="w-4 h-4 mr-1" /> Заказать
-        </a>
-      </Button>
     </div>
   </div>
 );
