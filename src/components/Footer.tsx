@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { toast } from "sonner";
 import logo from "@/assets/logo.png";
 
 const Footer = () => (
